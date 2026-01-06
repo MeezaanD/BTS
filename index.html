@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>BTS 2026 Comeback</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Playfair+Display:wght@700&display=swap"
+		rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Montserrat', sans-serif;
+			background-color: #0c0014;
+			color: #fff;
+			overflow-x: hidden;
+		}
+
+		.font-display {
+			font-family: 'Playfair+Display', serif;
+		}
+
+		/* Dance Styles */
+		@keyframes dance-bounce {
+
+			0%,
+			100% {
+				transform: translateY(0) scale(1);
+			}
+
+			50% {
+				transform: translateY(-15px) scale(1.02);
+			}
+		}
+
+		@keyframes dance-sway {
+
+			0%,
+			100% {
+				transform: rotate(-3deg) translateX(-5px);
+			}
+
+			50% {
+				transform: rotate(3deg) translateX(5px);
+			}
+		}
+
+		@keyframes dance-pop {
+
+			0%,
+			100% {
+				transform: scale(1);
+				filter: brightness(1);
+			}
+
+			50% {
+				transform: scale(1.08);
+				filter: brightness(1.3);
+			}
+		}
+
+		@keyframes dance-slide {
+
+			0%,
+			100% {
+				transform: translateX(0);
+			}
+
+			25% {
+				transform: translateX(-10px) skewX(2deg);
+			}
+
+			75% {
+				transform: translateX(10px) skewX(-2deg);
+			}
+		}
+
+		.animate-dance-1 {
+			animation: dance-bounce 2s ease-in-out infinite;
+		}
+
+		.animate-dance-2 {
+			animation: dance-sway 3s ease-in-out infinite;
+		}
+
+		.animate-dance-3 {
+			animation: dance-pop 1.5s ease-in-out infinite;
+		}
+
+		.animate-dance-4 {
+			animation: dance-slide 4s ease-in-out infinite;
+		}
+
+		@keyframes float {
+
+			0%,
+			100% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(-20px);
+			}
+		}
+
+		.animate-float {
+			animation: float 6s ease-in-out infinite;
+		}
+
+		@keyframes star-twinkle {
+
+			0%,
+			100% {
+				opacity: 0.2;
+				transform: scale(0.8);
+			}
+
+			50% {
+				opacity: 1;
+				transform: scale(1.2);
+			}
+		}
+
+		.star {
+			position: absolute;
+			background: white;
+			border-radius: 50%;
+			pointer-events: none;
+		}
+
+		/* Stage Lights */
+		.stage-light {
+			position: fixed;
+			width: 60vw;
+			height: 60vw;
+			background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+			top: -10vw;
+			filter: blur(80px);
+			pointer-events: none;
+			z-index: -1;
+		}
+	</style>
+	<script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+      }
+    }
+    </script>
+	<link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+	<div id="root"></div>
+	<script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
