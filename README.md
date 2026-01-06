@@ -2,7 +2,7 @@
 
 A beautiful, interactive countdown application celebrating BTS's official reunion. With BTS beginning their military discharge in December 2024, this app marks the anticipated reunion date of **March 20, 2026**.
 
-## 🎵 Features
+## Features
 
 - **Live Countdown Timer** - Real-time countdown to March 20, 2026, showing days, hours, minutes, and seconds
 - **Member Gallery** - Elegant member cards displaying all 7 BTS members with smooth animations
@@ -11,48 +11,14 @@ A beautiful, interactive countdown application celebrating BTS's official reunio
 - **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile devices
 - **No External APIs** - Pure frontend experience with zero dependencies on external services
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **React 19** - Modern UI framework with hooks
 - **TypeScript** - Type-safe development
 - **Vite** - Lightning-fast build tool
 - **Tailwind CSS** - Utility-first styling
 
-## 📦 Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd bts-2026-comeback-countdown
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open your browser and navigate to `http://localhost:5173`
-
-## 🏗️ Build
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-Preview the production build:
-
-```bash
-npm run preview
-```
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── components/
@@ -67,7 +33,7 @@ npm run preview
 └── README.md              # This file
 ```
 
-## 💜 About
+## About
 
 This project celebrates the BTS ARMY community and the long-awaited reunion. The countdown represents the journey fans are taking together as they wait for March 20, 2026.
 
