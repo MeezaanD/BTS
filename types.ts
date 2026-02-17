@@ -4,6 +4,8 @@ export interface Member {
   name: string;
   fullName: string;
   image: string;
+  additionalImage: string;
+  role: string;
   delay: number;
 }
 
