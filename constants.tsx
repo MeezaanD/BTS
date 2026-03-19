@@ -1,7 +1,7 @@
 
 import { Member } from './types';
 
-export const TARGET_DATE = new Date('2026-03-20T00:00:00');
+export const TARGET_DATE = new Date('2026-03-20T06:00:00');
 
 export const BTS_MEMBERS: Member[] = [
   { id: 'rm', name: 'RM', fullName: 'Kim Namjoon', image: '/members/member-rm.jpg', additionalImage: '/members/RM-2.jpg', role: 'Leader, Main Rapper', delay: 0 },
